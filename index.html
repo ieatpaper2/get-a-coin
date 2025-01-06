@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 게임 화면 -->
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+  <!-- 컨트롤인포 -->
+    <div id="controls-info">
+      <h3>Controls</h3>
+      <p>A / ← : Move Left</p>
+      <p>D / → : Move Right</p>
+      <p>Space / ↑ : Jump</p>
+      <p>R : Game reset</p>
+    </div>
+  <!--스코어인포 -->
+    <div id="score-info">
+      <h3>Score</h3>
+      <p>여기에 점수 표시</p>
+    </div> 
+  <!--수명-->
+    <div id="heart-info">
+      <p>★ ★ ★</p>
+    </div> 
+<!-- 게임 오버 화면 HTML -->
+<div id="game-over-screen">
+  <h1>Game Over</h1>
+  <p>Your final score: <span id="final-score">0</span></p>
+  <button id="restart-button">Restart Game</button>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
